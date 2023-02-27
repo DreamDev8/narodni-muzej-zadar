@@ -1,0 +1,47 @@
+
+/*general styling*/
+
+.container {
+  width: min(var(--max-width), 100% - var(--side-margin-mobile) * 2);
+  margin-inline: auto;
+}
+
+.container-2 {
+  width: min(var(--max-width-feature), 100% - var(--side-margin-mobile) * 2);
+  margin-inline: auto;
+}
+
+.cta {
+  background-color: var(--white);
+  width: 320px;
+  height: 40px;
+  border: 1px solid var(--gold);
+}
+
+.social {
+  display: flex;
+  align-items: start;
+
+  img:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  div {
+    position: relative;
+
+    & :nth-child(1) {
+      max-width: 24px;
+      max-height: 18px;
+    }
+
+    & :nth-child(2) {
+      position: absolute;
+      top: 4px;
+      left: 8px;
+    }
+  }
+}
+
+
+
+

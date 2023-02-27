@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--UIkit Stylesheet-->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="./scss/style.css" />
+
+    <!--Font Awesome-->
+    <!-- <script src="https://use.fontawesome.com/releases/v6.0.0-beta2/js/all.js"></script> -->
+
+    <title>Narodni muzej Zadar</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="grid-container container">
+      <div class="grid-container-logo">
+        <img
+          src="./images/Logo_nas_rucno_crtani 2-01.png"
+          alt="logo-narodni-muzej-zadar"
+        />
+      </div>
+
+      <div class="grid-container-search grid-container-flex">
+        <div class="grid-container-flex-row">
+          <div class="grid-container-search-img">
+            <img src="./images/search1.png" alt="search" />
+            <img src="./images/search2.png" alt="search" />
+          </div>
+          <a href="#">Search</a>
+        </div>
+        <div class="grid-container-flex-row">
+          <a class="visited" href="#">Hr</a>
+          <a style="color: var(--grey)" href="#">En</a>
+        </div>
+      </div>
+
+      <div class="grid-container-social grid-container-flex">
+        <div class="social">
+          <img src="./images/Vector.png" alt="facebook" />
+          <img src="./images/Vector (1).png" alt="instagram" />
+          <div>
+            <img src="./images/youtube1.png" alt="youtube" />
+            <img src="./images/youtube2.png" alt="youtube" />
+          </div>
+        </div>
+        <div class="knez-pal grid-container-flex-row">
+          <img src="./images/kneževa palača logo-01.png" alt="kneževa-palača" />
+          <h4>Kneževa palača</h4>
+        </div>
+      </div>
+
+      <!-- navbar -->
+
+      <div class="grid-container-nav">
+        <button
+          class="uk-button uk-button-default nav-toggle"
+          type="button"
+          uk-toggle="target: #offcanvas-overlay"
+        >
+          <a
+            class="uk-navbar-toggle uk-navbar-toggle-animate"
+            uk-navbar-toggle-icon
+            href="#"
+          ></a>
+        </button>
+
+        <div id="offcanvas-overlay" uk-offcanvas="overlay: true; flip: true">
+          <div class="menu-bg uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <!-- navbar mobile drop-down-->
+
+            <div class="mobile-drop-down">
+              <ul>
+                <li class="drop-down-link">
+                  <a href="#">O muzeju</a>
+                  <div class="o-muzeju">
+                    <ul>
+                      <li class="menu-2"><a href="#">Opći podaci</a></li>
+                      <li class="menu-2">
+                        <a href="feature.html">Povijest muzeja</a>
+                      </li>
+                      <li class="menu-2"><a href="#">Dokumenti</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="drop-down-link">
+                  <a href="#">Sastavne jedinice</a>
+                </li>
+                <li class="drop-down-link"><a href="#">Događanja</a></li>
+                <li class="drop-down-link"><a href="#">Izložbe</a></li>
+                <li class="drop-down-link"><a href="#">Edukacija</a></li>
+                <li class="drop-down-link"><a href="#">Izdavaštvo</a></li>
+                <li class="drop-down-link"><a href="#">Zbirke</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- desktop -->
+      <nav uk-navbar>
+        <div class="uk-navbar-center">
+          <ul class="uk-navbar-nav">
+            <li>
+              <a href="#">O muzeju<span uk-navbar-parent-icon></span></a>
+              <div class="uk-navbar-dropdown">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li><a href="#">Opći podaci</a></li>
+                  <li><a href="feature.html">Povijest muzeja</a></li>
+                  <li><a href="#">Dokumenti</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="">Sastavne jedinice</a></li>
+            <li><a href="">Događanja</a></li>
+            <li><a href="">Izložbe</a></li>
+            <li><a href="">Edukacija</a></li>
+            <li><a href="">Izdavaštvo</a></li>
+            <li>
+              <a href="#">Zbirke<span uk-navbar-parent-icon></span></a>
+              <div class="uk-navbar-dropdown">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li>
+                    <a href="#"
+                      >Muzejske zbirke<span
+                        uk-icon="icon: chevron-right; ratio: 0.8"
+                      ></span
+                    ></a>
+                    <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="#">Zbirke Galerije umjetnina</a></li>
+                        <li><a href="#">Zbirke prirodoslovnog odjela</a></li>
+                        <li><a href="#">Zbirke Etnološkog odjela</a></li>
+                        <li>
+                          <a href="#">Zbirke odjela Muzeja grada Zadra</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Dokumentacijske zbirke<span
+                        uk-icon="icon: chevron-right; ratio: 0.8"
+                      ></span
+                    ></a>
+                    <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="#">Izložbe</a></li>
+                        <li><a href="#">Izdavaštvo</a></li>
+                        <li><a href="#">Hemeroteka</a></li>
+                        <li><a href="#">Posebna Događanja</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- hero container -->
+      <section class="hero-container">
+        <div class="hero-img">
+          <img
+            src="./images/popartandywarholmarilyn1865x577.crop_768x577_48,0.png"
+            alt="main-cover"
+          />
+        </div>
+        <div class="hero-slider-btn">
+          <span class="hero-btn" data-id="1"></span>
+          <span class="hero-btn hero-active" data-id="2"></span>
+          <span class="hero-btn" data-id="3"></span>
+          <span class="hero-btn" data-id="4"></span>
+          <span class="hero-btn" data-id="5"></span>
+        </div>
+        <div class="hero-copy">
+          <div class="hero-slider-container">
+            <div class="slider">
+              <div class="slide">
+                <h5>LOREM IPSUM 1</h5>
+                <h1>Lorem ipsum dolor sit amet.</h1>
+              </div>
+              <div class="slide">
+                <h5>ZBIRKA ODJELA NMZ-a</h5>
+                <h1>
+                  Najotrovnije zmije svijeta od 18. lipnja do 31. kolovoza 2018.
+                </h1>
+              </div>
+              <div class="slide">
+                <h5>3. LOREM IPSUM 2</h5>
+                <h1>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h1>
+              </div>
+              <div class="slide">
+                <h5>4. LOREM IPSUM 3</h5>
+                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+              </div>
+              <div class="slide">
+                <h5>5. LOREM IPSUM 4</h5>
+                <h1>Lorem ipsum dolor sit amet.</h1>
+              </div>
+
+              <div class="hero-slider-cta">
+                <button class="hero-slider-cta-prev">
+                  <span uk-icon="icon: chevron-left; ratio: 3"></span>
+                </button>
+                <button class="hero-slider-cta-next">
+                  <span uk-icon="icon: chevron-right; ratio: 3"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- intro container -->
+
+      <section>
+        <div class="intro-container container">
+          <div>
+            <h5>Dobrodošli!</h5>
+            <p>
+              Osnovna misija današnjega Narodnog muzeja Zadar obuhvaća sustavno
+              sakupljanje, čuvanje, izlaganje, dokumentiranje, te stručnu i
+              znanstvenu obradu pokretnih i nepokretnih predmeta civilizacijske,
+              kulturne i prirodne baštine, nastale u razdoblju
+            </p>
+          </div>
+          <div class="intro-icons-heading">
+            <div>
+              <h5>Posjetite nas</h5>
+            </div>
+            <div>
+              <div class="intro-icons">
+                <div class="location">
+                  <a href="#">
+                    <img
+                      class="location-img-1"
+                      src="./images/loc1.png"
+                      alt="location"
+                    />
+                    <img
+                      class="location-img-2"
+                      src="./images/loc2.png"
+                      alt="location"
+                    />
+                  </a>
+                  <p>Gdje smo</p>
+                </div>
+                <div class="audio">
+                  <a href="#">
+                    <img
+                      class="audio-img-1"
+                      src="./images/info1.png"
+                      alt="information"
+                    />
+                    <img
+                      class="audio-img-2"
+                      src="./images/search1.png"
+                      alt="information"
+                    />
+                  </a>
+                  <p>Audio vodič</p>
+                </div>
+                <div class="info">
+                  <a href="#">
+                    <img
+                      class="info-img-1"
+                      src="./images/info1.png"
+                      alt="information"
+                    />
+                    <img
+                      class="info-img-2"
+                      src="./images/search1.png"
+                      alt="information"
+                    />
+                  </a>
+                  <p>Info</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- card container -->
+      <section class="card-container-primary">
+        <div class="card-container-secondary container">
+          <div class="card-heading">
+            <h2>Aktualnosti</h2>
+            <div>
+              <h2>
+                Vidi više<span uk-icon="icon: chevron-right; ratio: 1"></span>
+              </h2>
+            </div>
+          </div>
+
+          <div uk-grid class="card-grid uk-grid-match uk-grid-small">
+            <!-- card -->
+            <article
+              class="card uk-card uk-card-default uk-width-1-4@l uk-width-1-2@m uk-width-1-1@s"
+            >
+              <div class="card-img">
+                <img
+                  src="./images/Izbor iz zbirki Galerije umjetnina (1).png"
+                  alt="izložba-ivana-mažuranića"
+                />
+                <div class="card-img-rectangle">
+                  <img src="./images/Rectangle 6.14.png" alt="datum izložbe" />
+                  <img
+                    src="./images/Rectangle 6.15 red.png"
+                    alt="datum izložbe"
+                  />
+                  <h4>12.1.2018. - 12.2.2018.</h4>
+                </div>
+              </div>
+              <div class="card-copy">
+                <h4>IZLOŽBE</h4>
+                <div class="card-title">
+                  <h2 class="uk-card-title">
+                    Izložba Ivana Mažuranića - Kiparske inspiracije
+                  </h2>
+                </div>
+                <p>Galerija umjetnina</p>
+                <button class="cta">Vidi više</button>
+              </div>
+            </article>
+
+            <!-- card -->
+            <article
+              class="card uk-card uk-card-body uk-card-default uk-width-1-4@l uk-width-1-2@m uk-width-1-1@s"
+            >
+              <div class="card-img">
+                <img
+                  src="./images/foto_Billy_Name_1529323525.png"
+                  alt="predavanje andy warhol"
+                />
+                <div class="card-img-rectangle">
+                  <img
+                    src="./images/Rectangle 6.14.png"
+                    alt="datum predavanja"
+                  />
+                  <img
+                    src="./images/Rectangle 6.15 green.png"
+                    alt="datum predavanja"
+                  />
+                  <h4>22.6.2018.</h4>
+                </div>
+              </div>
+              <div class="card-copy">
+                <h4>PREDAVANJA</h4>
+                <div class="card-title">
+                  <h2 class="uk-card-title">
+                    Andy Warhol: The King of Pop Art
+                  </h2>
+                </div>
+                <p>Kneževa palača</p>
+                <button class="cta">Vidi više</button>
+              </div>
+            </article>
+
+            <!-- card -->
+            <article
+              class="card uk-card uk-card-body uk-card-default uk-width-1-4@l uk-width-1-2@m uk-width-1-1@s"
+            >
+              <div class="card-img">
+                <img
+                  src="./images/thumb_760_0x600_0_0_auto.png"
+                  alt="koncer-tazigrane-žice"
+                />
+                <div class="card-img-rectangle">
+                  <img src="./images/Rectangle 6.14.png" alt="datum koncerta" />
+                  <img
+                    src="./images/Rectangle 6.15 purple.png"
+                    alt="datum koncerta"
+                  />
+                  <h4>12.1.2018. - 12.2.2018.</h4>
+                </div>
+              </div>
+              <div class="card-copy">
+                <h4>KONCERTI</h4>
+                <div class="card-title">
+                  <h2 class="uk-card-title">Razigrane žice</h2>
+                </div>
+                <p>Kneževa palača</p>
+                <button class="cta">Vidi više</button>
+              </div>
+            </article>
+
+            <!-- card -->
+            <article
+              class="card uk-card uk-card-body uk-card-default uk-width-1-4@l uk-width-1-2@m uk-width-1-1@s"
+            >
+              <div class="card-img">
+                <img
+                  src="./images/oglas_15_minutes_1527238997.png"
+                  alt="natječaj-15-minutes-of-fame"
+                />
+                <div class="card-img-rectangle">
+                  <img
+                    src="./images/Rectangle 6.14.png"
+                    alt="datum natječaja"
+                  />
+                  <img
+                    src="./images/Rectangle 6.15 gold.png"
+                    alt="datum natječaja"
+                  />
+                  <h4>25.6.2018.</h4>
+                </div>
+              </div>
+              <div class="card-copy">
+                <h4>OSTALO</h4>
+                <div class="card-title">
+                  <h2 class="uk-card-title">Natječaj: 15 minutes of fame</h2>
+                </div>
+                <p>Atrij Kneževe palače</p>
+                <button class="cta">Vidi više</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container-primary container">
+        <!-- footer grid container -->
+        <div class="footer-container-secondary">
+          <!-- grid column -->
+          <div class="footer-column-1">
+            <div class="footer-column">
+              <img
+                class="logo"
+                src="./images/Logo_nas_rucno_crtani 2-01.png"
+                alt="logo-narodni-muzej-zadar"
+              />
+              <div class="footer-column-1-info">
+                <p>
+                  Narodni muzej Zadar Poljana pape Aleksandra III b.b., 23000
+                  Zadar
+                </p>
+                <p>Tel: 023/251-851 FAx: 023/251-044</p>
+                <p>info@nmz.hr</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- grid column -->
+          <div class="footer-column-2">
+            <div class="footer-column">
+              <ul>
+                <li><a href="#">Najam prostora</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Multimedia</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- grid column -->
+          <div class="footer-column-3">
+            <div class="footer-column">
+              <p>Prijavi se na newsletter</p>
+              <form>
+                <input type="text" />
+                <input class="checkbox" type="checkbox" />
+                <button>Pošalji</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- grid column -->
+          <div class="footer-column-4">
+            <div class="footer-column">
+              <p>
+                Pročitao sam i prihvaćam Opće uvjete korištenja i izjavu o
+                povjerljivosti podataka
+              </p>
+            </div>
+          </div>
+
+          <!-- grid column -->
+          <div class="footer-column-5">
+            <div class="footer-column">
+              <div class="social">
+                <img src="./images/Vector.png" alt="facebook" />
+                <img src="./images/Vector (1).png" alt="instagram" />
+                <div>
+                  <img src="./images/youtube1.png" alt="youtube" />
+                  <img src="./images/youtube2.png" alt="youtube" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="footer-copyright-1">
+          <p>Copyright (c) NMZ 2018.</p>
+          <p>Pravne napomene/Impressium</p>
+        </div>
+        <p>Izrada NOVENA</p>
+      </div>
+    </footer>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="script1.js"></script>
+  </body>
+</html>

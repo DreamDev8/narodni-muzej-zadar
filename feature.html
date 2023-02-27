@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--UIkit Stylesheet-->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="./scss/style.css" />
+
+    <title>Galerija umjetnina</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="grid-container grid-container-feature container">
+      <div class="grid-container-logo">
+        <img
+          src="./images/Logo_nas_rucno_crtani 2-01.png"
+          alt="logo-narodni-muzej-zadar"
+        />
+      </div>
+
+      <div class="grid-container-search grid-container-flex">
+        <div class="grid-container-flex-row">
+          <div class="grid-container-search-img">
+            <img src="./images/search1.png" alt="search" />
+            <img src="./images/search2.png" alt="search" />
+          </div>
+          <a href="#">Search</a>
+        </div>
+        <div class="grid-container-flex-row">
+          <a class="visited" href="#">Hr</a>
+          <a style="color: var(--grey)" href="#">En</a>
+        </div>
+      </div>
+
+      <div class="grid-container-social grid-container-flex">
+        <div class="social">
+          <img src="./images/Vector.png" alt="facebook" />
+          <img src="./images/Vector (1).png" alt="instagram" />
+          <div>
+            <img src="./images/youtube1.png" alt="youtube" />
+            <img src="./images/youtube2.png" alt="youtube" />
+          </div>
+        </div>
+        <div class="knez-pal grid-container-flex-row">
+          <img src="./images/kneževa palača logo-01.png" alt="kneževa-palača" />
+          <h4>Kneževa palača</h4>
+        </div>
+      </div>
+
+      <!-- navbar -->
+
+      <div class="grid-container-nav">
+        <button
+          class="uk-button uk-button-default nav-toggle"
+          type="button"
+          uk-toggle="target: #offcanvas-overlay"
+        >
+          <a
+            class="uk-navbar-toggle uk-navbar-toggle-animate"
+            uk-navbar-toggle-icon
+            href="#"
+          ></a>
+        </button>
+
+        <div id="offcanvas-overlay" uk-offcanvas="overlay: true; flip: true">
+          <div class="menu-bg uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <!-- navbar mobile drop-down-->
+
+            <div class="mobile-drop-down">
+              <ul>
+                <li class="drop-down-link">
+                  <a href="#">O muzeju</a>
+                  <div class="o-muzeju">
+                    <ul>
+                      <li class="menu-2"><a href="#">Opći podaci</a></li>
+                      <li class="menu-2"><a href="#">Povijest muzeja</a></li>
+                      <li class="menu-2"><a href="#">Dokumenti</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="drop-down-link"><a href="">Sastavne jedinice</a></li>
+                <li class="drop-down-link"><a href="">Događanja</a></li>
+                <li class="drop-down-link"><a href="">Izložbe</a></li>
+                <li class="drop-down-link"><a href="">Edukacija</a></li>
+                <li class="drop-down-link"><a href="">Izdavaštvo</a></li>
+                <li class="drop-down-link"><a href="#">Zbirke</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- desktop -->
+      <nav uk-navbar>
+        <div class="uk-navbar-center">
+          <ul class="uk-navbar-nav">
+            <li>
+              <a href="#">O muzeju<span uk-navbar-parent-icon></span></a>
+              <div class="uk-navbar-dropdown">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li><a href="#">Opći podaci</a></li>
+                  <li><a href="#">Povijest muzeja</a></li>
+                  <li><a href="#">Dokumenti</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="">Sastavne jedinice</a></li>
+            <li><a href="">Događanja</a></li>
+            <li><a href="">Izložbe</a></li>
+            <li><a href="">Edukacija</a></li>
+            <li><a href="">Izdavaštvo</a></li>
+            <li>
+              <a href="#">Zbirke<span uk-navbar-parent-icon></span></a>
+              <div class="uk-navbar-dropdown">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li>
+                    <a href="#"
+                      >Muzejske zbirke<span
+                        uk-icon="icon: chevron-right; ratio: 0.8"
+                      ></span
+                    ></a>
+                    <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="#">Zbirke Galerije umjetnina</a></li>
+                        <li><a href="#">Zbirke prirodoslovnog odjela</a></li>
+                        <li><a href="#">Zbirke Etnološkog odjela</a></li>
+                        <li>
+                          <a href="#">Zbirke odjela Muzeja grada Zadra</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Dokumentacijske zbirke<span
+                        uk-icon="icon: chevron-right; ratio: 0.8"
+                      ></span
+                    ></a>
+                    <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="#">Izložbe</a></li>
+                        <li><a href="#">Izdavaštvo</a></li>
+                        <li><a href="#">Hemeroteka</a></li>
+                        <li><a href="#">Posebna Događanja</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-2 breadcrumb">
+      <nav aria-label="Breadcrumb">
+        <ul class="uk-breadcrumb">
+          <li class="unactive"><a href="#">O muzeju</a></li>
+          <li class="active">
+            <a href="#" aria-current="page">Povijest muzeja</a>
+          </li>
+        </ul>
+        <h1 class="feature-heading">Galerija umjetnina</h1>
+      </nav>
+    </div>
+    <main class="feature-container">
+      <!-- section-1 -->
+      <section class="feature-1">
+        <div uk-grid class="feature-grid-1 container-2">
+          <!-- grid column -->
+          <div class="feature-info-column-1">
+            <h5>Otvoreno za posjetitelje</h5>
+            <p>Galerija umjetnina</p>
+            <p>Ponedjeljak, utorak, četvrtak, petak: 9 - 13</p>
+            <p>Srijeda: 15 – 19</p>
+            <p>Subotom i Nedjeljom zatvoreno.</p>
+          </div>
+          <!-- grid column -->
+          <div>
+            <h5>Kontaktirajte nas</h5>
+            <p>T. 023/211-174</p>
+            <p>F. 023/211-174</p>
+          </div>
+          <!-- grid column -->
+          <div>
+            <h5>Adresa</h5>
+            <p>Medulićeva 2</p>
+            <p>23000 Zadar</p>
+          </div>
+          <!-- grid column -->
+          <div>
+            <h5>Nevena Štokić</h5>
+            <p>kustosica</p>
+            <p>voditeljica Galerije umjetnina</p>
+            <p>nevena.stokic@nmz.hr</p>
+          </div>
+          <!-- grid column -->
+          <div>
+            <h5>Koraljka Alavanja</h5>
+            <p>kustosica</p>
+            <p>Galerija umjetnina</p>
+            <p>koraljka.alavanja@nmz.hr</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- section-2 -->
+      <section uk-grid class="feature-2 container-2 uk-child-width-expand@m">
+        <!-- grid column -->
+        <div class="feature-column-1 feature-active" id="izlozba">
+          <div>
+            <img
+              src="./images/4bdg0gjp.png"
+              alt="izložba-izbor-iz-zbirki-galerije-umjetnina"
+            />
+          </div>
+          <div>
+            <p>
+              Galerija umjetnina osnovana je nakon Drugoga svjetskog rata u
+              potpuno razorenom gradu 10. listopada 1948. Od osnutka do 1963.
+              bila je samostalna ustanova. Prva je institucija takve vrste u
+              Zadru koja se bavi skupljanjem, čuvanjem i predstavljanjem
+              umjetničke građe, najvećim dijelom XX. stoljeća. Bez likovne
+              aktivnosti i tradicije, počinjalo se ispočetka. Zbog nesretnih
+              povijesnih razloga likovno stvaralaštvo Zadra ne oslanja se na
+              kontinuirani razvoj za razliku od gradova kojih se suvremeno
+              likovno stvaralaštvo naslanja na snažnu umjetničku tradiciju.
+              Stoga je bila neprocjenjivo vrijedna ideja osnivanja Galerije
+              umjetnina. Fundus od 80 radova u početku narastao je otkupima i
+              donacijama na 1.700 umjetničkih predmeta. Tomu treba dodati oko
+              30.000 negativa fotoreporterskog opusa Ante Brkana. Galerija u
+              svom fundusu posjeduje umjetnine XVII., XVIII. i XIX. st. te
+              čuveni „Ugljanski triptih“ iz XIII. st. (stalna posudba SICU), a
+              najveći dio pripada XX. stoljeću. Građa je podijeljena na: Zbirku
+              starog slikarstva, Zbirku ikona, Zbirku umjetnosti XIX. i XX. st.
+              (do 1945.), Zbirku suvremene umjetnosti, Zbirku negativa Ante
+              Brkana i Zbirku fotografija. Galerija je od osnivanja smještena u
+              Providurovoj palači, Medulićeva 2/1 te raspolaže s 665 m². Od toga
+              spremišta za umjetnine i praktikable zapremaju 106 m², izložbeni
+              prostori: 257 m², uredi: 37,5 m². Muzejsko-galerijsko poslanje
+              Galerije obuhvaća skupljanje umjetnina uglavnom s područja
+              Hrvatske, čuvanje građe, istraživanje i predstavljanje fundusa i
+              izložbeno-prezentacijsku djelatnost. Fundus je dosad prezentiran u
+              šest tematskih cjelina: pedesetih godina izložena je inicijalna
+              građa - ikone i hrvatski, uglavnom dalmatinski slikari, potom
+              Hrvatsko slikarstvo od XIX. stoljeća do pedesetih godina,
+              Slikarstvo na tlu Jugoslavije od 1945. do 1975., Dalmatinsko
+              slikarstvo od 1850. do 1977., Slikarstvo i kiparstvo u Jugoslaviji
+              od 1918. do 1980. te Hrvatsko slikarstvo i kiparstvo XIX. i XX.
+              stoljeća.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-column-1" id="radionica">
+          <div>
+            <img
+              src="https://picsum.photos/id/71/700/453"
+              alt="placeholder-1"
+            />
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, animi
+              culpa, repellendus sint quidem repudiandae aliquid rem provident
+              optio cum deserunt debitis corrupti labore nemo asperiores. Eius
+              harum iusto ex blanditiis cum eaque autem, debitis consequatur
+              aliquid ducimus numquam! Iusto aliquam mollitia, optio accusantium
+              explicabo quasi autem, repellat beatae fugit quo ipsa at enim
+              voluptates eaque error perferendis consectetur quia quam?
+              Consectetur, reiciendis sed adipisci dignissimos quam earum
+              eveniet veniam atque rerum asperiores. Libero harum quod dolorum
+              ducimus veritatis, exercitationem doloremque aspernatur sint
+              similique sapiente soluta neque incidunt dolores rerum. Enim
+              deserunt doloremque, minus necessitatibus accusantium obcaecati
+              molestias reprehenderit perferendis.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-column-1" id="predavanje">
+          <div>
+            <img
+              src="https://picsum.photos/id/25/700/453"
+              alt="izložba-izbor-iz-zbirki-galerije-umjetnina"
+            />
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              reprehenderit quam, maiores quis aut dolorem eligendi tenetur!
+              Quibusdam rem atque neque. Vitae earum veniam vero porro,
+              doloribus perspiciatis. Iure dolor ex quia, officia animi
+              repudiandae molestias quibusdam itaque perspiciatis magni unde
+              reprehenderit magnam neque quam aliquid laboriosam vitae ut sequi
+              quasi ullam dolorem velit. Omnis tempora doloremque, odio nesciunt
+              inventore at mollitia iure nisi provident ipsum voluptatum in
+              maiores harum animi hic. Explicabo esse laborum quia dignissimos
+              quas! Aperiam libero ipsum minima incidunt totam, molestiae labore
+              quod sint, ea nobis placeat. Dignissimos itaque exercitationem
+              vero, obcaecati officia optio deserunt fugit corporis. Quo eius
+              ipsum voluptatum facere mollitia nobis accusamus ab, nesciunt
+              magni temporibus ipsa quos exercitationem assumenda magnam alias
+              porro. Iure amet laudantium maiores illo ullam pariatur, nihil
+              quasi cumque eaque, laboriosam eligendi repellendus voluptatibus,
+              tempora iusto. Minus architecto corporis voluptatem cupiditate,
+              quisquam placeat rem perspiciatis vel, ad dicta itaque!
+            </p>
+          </div>
+        </div>
+
+        <!-- grid column -->
+        <div uk-grid class="feature-column-2 uk-grid-small uk-grid-match">
+          <!-- nested grid column -->
+          <div class="feature-nested-1 uk-card uk-card-default">
+            <h2>Tekuće izložbe i događanja</h2>
+            <div>
+              <div class="arrows feature-active btn-container">
+                <div>
+                  <span
+                    class="chevron-left"
+                    uk-icon="icon: chevron-left; ratio: 1"
+                  ></span>
+                  <span
+                    class="chevron-right"
+                    uk-icon="icon: chevron-right; ratio: 1"
+                  ></span>
+                </div>
+                <button data-id="izlozba" class="btn-slider feature-active">
+                  Izložba “Izbor iz zbirki galerije umjetnina
+                </button>
+              </div>
+              <p>21.5.2018. - 22.6.2018.</p>
+            </div>
+            <div>
+              <div class="arrows btn-container">
+                <div>
+                  <span
+                    class="chevron-left"
+                    uk-icon="icon: chevron-left; ratio: 1"
+                  ></span>
+                  <span
+                    class="chevron-right"
+                    uk-icon="icon: chevron-right; ratio: 1"
+                  ></span>
+                </div>
+                <button data-id="radionica" class="btn-slider">
+                  Interaktivna radionica “Zalistavac-Semi-Nola Patchwork”
+                </button>
+              </div>
+              <p>12.4.2018. - 28.4.2018.</p>
+            </div>
+            <div>
+              <div class="arrows btn-container">
+                <div>
+                  <span
+                    class="chevron-left"
+                    uk-icon="icon: chevron-left; ratio: 1"
+                  ></span>
+                  <span
+                    class="chevron-right"
+                    uk-icon="icon: chevron-right; ratio: 1"
+                  ></span>
+                </div>
+                <button data-id="predavanje" class="btn-slider">
+                  Predavanje o fotografiji Braće Brkan
+                </button>
+              </div>
+              <p>5.3.2018.</p>
+            </div>
+          </div>
+
+          <!-- nested grid column -->
+          <div class="feature-nested-2 uk-card uk-card-default">
+            <h2>Zbirke Galerije umjetnina</h2>
+            <div>
+              <button>Zbirka ikona</button>
+            </div>
+            <div>
+              <button>Zbirka starog slikarstva</button>
+            </div>
+            <div>
+              <button>Zbirka XIX. st. i prve polovice XX. stoljeća</button>
+            </div>
+            <div>
+              <button>Zbirka suvremene umjetnosti</button>
+            </div>
+            <div>
+              <button>Zbirka fotografija</button>
+            </div>
+            <div>
+              <button>Zbirka negativa Ante Brkana</button>
+            </div>
+          </div>
+
+          <!-- nested grid column -->
+          <div class="feature-nested-3 uk-card uk-card-default">
+            <h2>Izdanja Galerije umjetnika</h2>
+            <div>
+              <button>
+                Izbor iz zbirki galerije umjetnina Nevenka Benini: More, Kamen,
+                tišine,intima
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container-primary container">
+        <!-- footer grid container -->
+        <div class="footer-container-secondary">
+          <!-- grid column -->
+          <div class="footer-column-1">
+            <div class="footer-column">
+              <img
+                class="logo"
+                src="./images/Logo_nas_rucno_crtani 2-01.png"
+                alt="logo-narodni-muzej-zadar"
+              />
+              <div class="footer-column-1-info">
+                <p>
+                  Narodni muzej Zadar Poljana pape Aleksandra III b.b., 23000
+                  Zadar
+                </p>
+                <p>Tel: 023/251-851 FAx: 023/251-044</p>
+                <p>info@nmz.hr</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- grid column -->
+          <div class="footer-column-2">
+            <div class="footer-column">
+              <ul>
+                <li><a href="#">Najam prostora</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Multimedia</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- grid column -->
+          <div class="footer-column-3">
+            <div class="footer-column">
+              <p>Prijavi se na newsletter</p>
+              <form>
+                <input type="text" />
+                <input class="checkbox" type="checkbox" />
+                <button>Pošalji</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- grid column -->
+          <div class="footer-column-4">
+            <div class="footer-column">
+              <p>
+                Pročitao sam i prihvaćam Opće uvjete korištenja i izjavu o
+                povjerljivosti podataka
+              </p>
+            </div>
+          </div>
+
+          <!-- grid column -->
+          <div class="footer-column-5">
+            <div class="footer-column">
+              <div class="social">
+                <img src="./images/Vector.png" alt="facebook" />
+                <img src="./images/Vector (1).png" alt="instagram" />
+                <div>
+                  <img src="./images/youtube1.png" alt="youtube" />
+                  <img src="./images/youtube2.png" alt="youtube" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="footer-copyright-1">
+          <p>Copyright (c) NMZ 2018.</p>
+          <p>Pravne napomene/Impressium</p>
+        </div>
+        <p>Izrada NOVENA</p>
+      </div>
+    </footer>
+
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="script2.js"></script>
+  </body>
+</html>

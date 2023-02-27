@@ -1,0 +1,121 @@
+.card-container-primary {
+  background-color: var(--bg);
+  min-height: 655px;
+}
+
+.card-container-secondary {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/*card heading*/
+
+.card-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  div {
+    position: relative;
+
+    h2 {
+      margin-right: 38px;
+
+      span {
+        position: absolute;
+        left: 107px;
+        top: 9px;
+      }
+    }
+  }
+
+  h2 {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: var(--fw-700);
+    margin: 0 0 22px 0;
+  }
+}
+
+/*card*/
+
+.card-grid {
+  margin: auto;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 340px;
+  height: 477px;
+  text-align: left;
+  padding: 10px;
+}
+
+/*card image*/
+.card-img-rectangle {
+  position: relative;
+  bottom: 15px;
+
+  :nth-child(2) {
+    position: absolute;
+    top: 0px;
+    right: 71px;
+  }
+
+  :nth-child(3) {
+    position: absolute;
+    bottom: -15px;
+    left: 7px;
+    font-size: 16px;
+    color: white;
+  }
+}
+
+/*card copy*/
+.card-copy {
+  h4 {
+    font-size: 14px;
+    color: var(--gold);
+    font-weight: var(--fw-600);
+    margin-bottom: 10px;
+  }
+
+  .card-title {
+    width: 256px;
+    height: 63px;
+    margin: 0 0 20px 0;
+  }
+
+  h2 {
+    margin: 0;
+    // margin: 0 0 20px 0;
+    font-size: 20px;
+    font-weight: var(--fw-700);
+    color: var(--h1);
+    line-height: 31.05px;
+  }
+
+  p {
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    font-weight: var(--fw-600);
+    color: var(--grey);
+  }
+
+  button {
+    font-size: 14px;
+    font-weight: var(--fw-600);
+    color: var(--gold);
+    width: 100%;
+  }
+}
+
+/*desktop*/
+@media screen and (min-width: 83.125em) {
+  .card-heading {
+    justify-content: space-between;
+    gap: 0;
+  }
+}

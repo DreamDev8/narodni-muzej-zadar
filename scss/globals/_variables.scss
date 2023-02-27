@@ -1,0 +1,32 @@
+:root {
+  // color
+  --white: #ffffff;
+  --links: #3C3835;
+  --h1: #4D4A47;
+  --gold: #A38B5B;
+  --grey: #82807E;
+  --dark: #425863;
+  --bg:#F6F4F0;
+
+  // font-family
+  --ff-primary: 'Open Sans', sans-serif;
+
+  // font-weight
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  --fs-body-desktop: 1rem;
+  --fs-h1-desktop: 48px;
+  --fs-lg-desktop: 24px;
+  --fs-m-desktop: 20px;
+  --fs-sm-desktop: 18px
+  --fs-xsm-desktop: 14px;
+
+  // margin
+  --side-margin-mobile: 1.875rem;
+
+  // max-width
+  --max-width: 1420px;
+  --max-width-feature: 1180px;
+}
